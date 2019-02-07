@@ -1,0 +1,440 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+
+/*CSS*/
+/*HEADER*/
+.page-header{
+width: auto;
+height: 150px;
+background-image: url("../img/fondoheader.jpg");
+}
+
+.page-header h1{
+  padding-top: 50px;
+  font-family: 'Faster One', cursive;
+}
+/*BARRA DE NAVEGACION*/
+nav{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+background: rgba(241,231,103,1);
+background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(180,82,191,1)));
+background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
+
+}
+nav span{
+  font-family: 'Faster One', cursive;
+}
+
+#sesion{
+  padding-left: 760px;
+}
+
+/*ESTRUCTURA*/
+.menu-lateral{
+  font-size: 25px;
+  font-family: 'Rajdhani', sans-serif;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  width:250px;
+  height: 400px;
+  border: 2px solid black;
+}
+
+.menu-lateral h1{
+  
+background: rgba(241,231,103,1);
+background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(180,82,191,1)));
+background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
+  font-family: 'Faster One', cursive;
+  text-align: center;
+
+}
+.menu-lateral img{
+  margin:10px;
+  width: 15%;
+  height: 15%;
+}
+
+.menu-lateral ul{
+  list-style:none;
+}
+
+.menu-lateral a:link{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.menu-lateral a:hover{
+  text-decoration: none;
+  font-size: 27px;
+  color: #b30086;
+
+}
+
+
+.columna-central{
+
+  margin-left: 300px;
+  margin-top: 20px;
+  width:auto;
+  margin-right: 20px;
+  height: 550px;
+  width: 1300px;
+
+
+}
+
+.columna-central h1{
+  margin-left: 25px;
+  font-family: 'Faster One', cursive;
+  color: white;
+  background-color: black;
+}
+
+.columna-central iframe{
+  width: 98%;
+  height: 100%;
+  margin-left: 25px;
+}
+
+#título_marca h1{
+background-color: white;
+border: solid 2px black;
+}
+
+
+#título_marca img{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 23%;
+  height: 23%;
+  display:block;
+  margin: auto;
+}
+
+
+.columna-central h2{
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+}
+
+.caja-compra{
+  margin-top: 15px;
+  float: left;
+  margin-left: 25px;
+  width: 300px;
+  border:2px solid black;
+  overflow:hidden;
+}
+
+.caja-compra span{
+    margin-top:200px;
+}
+
+.caja-compra h1 {
+  text-align: center;
+}
+.caja-compra img{
+  display:block;
+  width:100%;
+  height: 100%;
+  transform:scale(1);
+  -ms-transform:scale(1);
+}
+
+.caja-compra img:hover{
+  transform:scale(1.05);
+  -ms-transform:scale(1.05);
+}
+
+.caja-compra button{
+  border:2px solid black;
+  color: black;
+  padding-bottom: 20px;
+  padding: 10px 35px;
+  overflow:hidden;
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 120px;
+  background-color: rgba(241,231,103,1);
+  background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(180,82,191,1)));
+  background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
+}
+
+form button{
+  border:2px solid black;
+  color: black;
+  padding: 10px 35px;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: white;
+}
+
+form img{
+  padding-left: 2px;
+  width: 25px;
+  height: 25px;
+}
+
+.caja-compra button img{
+  padding-left: 15px;
+  padding-top: 4px;
+  width: 32%;
+  height:32%;
+
+}
+
+.caja-compra p{
+  margin-left: 10px;
+}
+
+.caja-compra h2{
+  margin-left: 10px;
+}
+
+.inicioSesion{
+  font-family: 'Rajdhani', sans-serif;
+margin-top: 5%;
+  font-size: 25px;
+ margin-left: 35%;
+}
+
+.registrarse{
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 5%;
+  font-size: 25px;
+  margin-left: 35%;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+  clear:both;
+  width:100%;
+  height:50px;
+    border: 2px solid red;
+    
+}
+
+.boton button{
+  border:2px solid white;
+  color: white;
+}
+
+.boton button:hover{
+  border: 2px solid black;
+  color: black;
+  background: rgba(241,231,103,1);
+  background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(180,82,191,1)));
+  background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
+}
+
+#detallesDeSesion{
+  position: absolute;
+  height: 180px;
+  width: 250px;
+  border: 2px solid black;
+  background-color: white;
+  z-index: 999;
+  display: none;
+}
+
+#detallesDeSesion a{
+  text-decoration:none;
+}
+
+#detallesDeUsuario{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  margin-left: 25px;
+  width: 95%;
+  height: 50%;
+}
+
+#detallesDeUsuario p{
+  margin: 15px;
+}
+
+#detallesDeSesion ul li{
+  margin: 8px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 75%;
+  position:relative;
+}
+
+/* The Close Button */
+#close {
+  width: 28px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Menu lateral izquierdo de la ventana Modal*/
+
+.ventanaModalLateralIzquierda{
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  top: 35px;
+  float: left;
+}
+
+.ventanaModalLateralIzquierda img{
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+
+.ventanaModalLateralDerecha{
+  width: 49%;
+  position: absolute;
+  left: 60%;
+  top: 12%;
+  height: 85%;
+ 
+}
+
+.ventanaModalLateralDerecha h3{
+  font-weight: bold;
+  font-size: 35px;
+  position: absolute;
+  left: 30px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.ventanaModalLateralDerecha .descripcion{
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ventanaModalLateralDerecha .precio{
+  font-size: 50px;
+  position: absolute;
+  top: 75px;
+  left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.ventanaModalLateralDerecha .anyadirAlCarrito{
+  position: absolute;
+  left: 30px;
+  top: 150px;
+}
+
+.ventanaModalLateralDerecha select{
+  width: 120px;
+}
+
+.ventanaModalLateralDerecha button{
+  margin-top: 65%;
+}
+
+
+.lineaProducto{
+  height: 200px;
+  margin-left: 25px;
+  border-bottom: 2px solid black;
+  margin-top: 5px;
+}
+
+.lineaProducto div{
+  float: left;
+  text-align: center;
+}
+
+.lineaProducto div p{
+  padding-top: 20%;
+  font-size: 20px;
+}
+
+.imagenProducto img{
+  width: 180px;
+  height: 180px;
+}
+
+.lineaProducto div{
+  height: 200px;
+  width: 15%;
+  
+}
+
+#comprar{
+  border:2px solid black;
+  color: black;
+  padding: 10px 35px;
+  font-family: 'Rajdhani', sans-serif;
+  background: rgba(241,231,103,1);
+  background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(180,82,191,1)));
+  background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
+  margin-top: 15px;
+  float: right;
+}
