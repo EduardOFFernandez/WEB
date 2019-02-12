@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", cargar);
+var ip = "localhost";
 
 function cargar(){
     document.getElementById("comprar").addEventListener("click", generarPedido);
@@ -10,7 +11,7 @@ function generarPedido(){
 
     peticion_http.onreadystatechange = generar;
 
-    peticion_http.open("POST", "http://localhost/web/php/generarPedido.php", true);
+    peticion_http.open("POST", "http://"+ip+"/web/php/generarPedido.php", true);
 
     //Enviamos parámetros;
     peticion_http.send(null);
@@ -21,14 +22,19 @@ function generarPedido(){
             //Conexion AJAX
             peticion_http = new XMLHttpRequest();
 
-            peticion_http.open("POST", "http://localhost/web/php/eliminarCarrito.php", true);
+            peticion_http.onreadystatechange = redirect;
+
+            peticion_http.open("POST", "http://"+ip+"/web/php/eliminarCarrito.php", true);
 
             //Enviamos parámetros;
             peticion_http.send(null);
 
-            if (peticion_http.readyState == 4 && peticion_http.status == 200) {
-                alert(peticion_http.responseText);
+            function redirect(){
+                if (peticion_http.readyState == 4 && peticion_http.status == 200) {
+                    location.href ="http://"+ip+"/web/pedidos.php";
+                }
             }
+            
         
         }
     }

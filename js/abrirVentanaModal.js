@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", cargar);
 var idProducto;
+var ip = "localhost";
 
 function cargar(){
     
@@ -18,7 +19,7 @@ function mostrarModal() {
 
     peticion_http.onreadystatechange = mostrar;
 
-    peticion_http.open("POST", "http://localhost/web/php/construirModal.php?id="+this.id, true);
+    peticion_http.open("POST", "http://"+ip+"/web/php/construirModal.php?id="+this.id, true);
     
     
     //Enviamos parámetros;
@@ -64,7 +65,7 @@ function anyadirProducto(){
 
     peticion_http.onreadystatechange = anyadirProductoLineaCarrito;
 
-    peticion_http.open("POST", "http://localhost/web/php/anyadirProductoLineaCarrito.php", true);
+    peticion_http.open("POST", "http://"+ip+"/web/php/anyadirProductoLineaCarrito.php", true);
 
     //Enviamos parámetros;
     peticion_http.send(form);

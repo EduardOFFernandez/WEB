@@ -1,8 +1,20 @@
 <?php 
 require 'database.php';
 session_start();
-$idProducto = $_POST['idProducto'];
+
+//CONSTRUIR CARRITO
 $idUsuario = $_SESSION['idUsuario'];
+$existenciaDeCarrito = "SELECT idUsuario FROM Carrito WHERE idUsuario=$idUsuario";
+$resultExistenciaDeCarrito = $conn->query($existenciaDeCarrito);
+
+if($resultExistenciaDeCarrito->num_rows < 1){
+
+    $crearCarrito = "INSERT INTO Carrito (idCarrito, idUsuario) VALUES (NULL, '$idUsuario')";
+    $resultadoCarrito = $conn->query($crearCarrito);
+}
+
+//ANYADIR PRODUCTO
+$idProducto = $_POST['idProducto'];
 $talla = $_POST['talla'];
 $precio = "SELECT precio FROM Productos WHERE idProducto=$idProducto";
 $resultPrecio = $conn->query($precio);

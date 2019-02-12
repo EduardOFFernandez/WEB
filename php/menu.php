@@ -29,7 +29,7 @@
           <div id='detallesDeSesion'>
           <ul>
           <li id='perfil'> <a href='datosDeUsuario.php'>Perfil</a> </li>
-          <li id='pedidios'> <a href='pedidios.php'>Mis Pedidos</a> </li>
+          <li id='pedidos'> <a href='pedidos.php'>Mis Pedidos</a> </li>
           <li id='atencionCliente'>Atención al cliente</li>
           <li id='cerrarSesion'> <a href='php/cerrarSesion.php'> Cerrar Sesión </a> </li>
           </ul>          

@@ -9,6 +9,7 @@
     <?php include 'php/menuMarcas.php'?>
   <div class="columna-central">
     <h1>Pedidos</h1>
+    <?php include 'php/mostrarPedido.php'?>
   </div>
   <div class="footer">
   </div>

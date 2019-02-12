@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", cargar);
+var ip = "localhost";
 
 function cargar() {
     document.getElementById('carrito').addEventListener("click", mostrarCarrito);
@@ -10,7 +11,7 @@ function cargar() {
 
 function mostrarCarrito(){
     
-    location.href ="http://localhost/web/carrito.php";
+    location.href ="http://"+ip+"/web/carrito.php";
 
 }
 
@@ -25,7 +26,7 @@ function eliminarDelCarrito(){
 
     peticion_http.onreadystatechange = eliminar;
 
-    peticion_http.open("POST", "http://localhost/web/php/eliminarDelCarrito.php", true);
+    peticion_http.open("POST", "http://"+ip+"/web/php/eliminarDelCarrito.php", true);
 
     //Enviamos parámetros;
     peticion_http.send(form);

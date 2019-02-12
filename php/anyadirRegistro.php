@@ -20,9 +20,6 @@
               $resultadoIdUsuario = $conn->query($consultaIdUsuario);
               $idUsuario = mysqli_fetch_array($resultadoIdUsuario);
               $idDios = $idUsuario['idUsuario'];
-              //Insertar Carrito 
-              $crearCarrito = "INSERT INTO Carrito (idCarrito, idUsuario) VALUES (NULL, '$idDios')";
-              $resultadoCarrito = $conn->query($crearCarrito);
               header("Location: ../inicioSesion.php");
       } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

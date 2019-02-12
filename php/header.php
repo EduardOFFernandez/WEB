@@ -8,4 +8,5 @@
     <script src="js/abrirVentanaModal.js"></script>
     <script src="js/mostrarCarrito.js"></script>
     <script src="js/generarPedido.js"></script>
+    <script src="js/mostrarPedido.js"></script>
   </head>
