@@ -38,10 +38,26 @@ while($filaCarrito = mysqli_fetch_array($resCarrito)){
       </div>
     </div>
     
-    <?php
+    <?php 
+
+    $total += $filaCarrito[4];
   }
 }
 
+
+
 ?>
 
-<button id="comprar">Comprar</button>
+<form id="comprar" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="streetwearshop@shop.com">
+            <input type="hidden" name="item_name" value="Pedido">
+            <input type="hidden" name="currency_code" value="EUR">
+            <input type="hidden" name="amount" value='<?php echo $total ?>'>
+            <input type="hidden" name="return" value="http://localhost/web/pedidos.php">
+            <input type="hidden" name="cancel_return" value="http://localhost/web"> 
+            <input type="image" src="http://www.paypal.com/es_XC/i/btn/x-click-but01.gif"
+                   name="submit"
+            >
+</form>
+

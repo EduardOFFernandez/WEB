@@ -14,9 +14,8 @@
   </div>
 
   <div class="columna-central">
-    <h1>Destacado</h1>
 
-    <?php include 'php/consultas.php'?>
+  <h1 id="logoCentral">STREETWEAR <span>SHOP</span></h1>
     
   </div>
 

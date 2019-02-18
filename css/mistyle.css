@@ -342,18 +342,8 @@ form img {
   width: 15%; }
 
 #comprar {
-  border: 2px solid black;
   color: black;
   padding: 10px 35px;
-  font-family: 'Rajdhani', sans-serif;
-  background: #f1e767;
-  background: -moz-linear-gradient(left, #f1e767 0%, #b452bf 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #f1e767), color-stop(100%, #b452bf));
-  background: -webkit-linear-gradient(left, #f1e767 0%, #b452bf 100%);
-  background: -o-linear-gradient(left, #f1e767 0%, #b452bf 100%);
-  background: -ms-linear-gradient(left, #f1e767 0%, #b452bf 100%);
-  background: linear-gradient(to right, #f1e767 0%, #b452bf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
   margin-top: 15px;
   float: right; }
 
@@ -392,5 +382,13 @@ form img {
 
 #precioTotal {
   float: right; }
+
+#logoCentral {
+  background-color: white;
+  color: black;
+  font-size: 120px;
+  padding-top: 15%; }
+  #logoCentral span {
+    font-size: 90px; }
 
 /*# sourceMappingURL=mistyle.css.map */

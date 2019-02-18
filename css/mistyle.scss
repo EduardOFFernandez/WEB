@@ -91,7 +91,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', end
 
 
 .columna-central{
-
+  
   margin-left: 300px;
   margin-top: 20px;
   width:auto;
@@ -415,18 +415,9 @@ margin-top: 5%;
 }
 
 #comprar{
-  border:2px solid black;
+  
   color: black;
   padding: 10px 35px;
-  font-family: 'Rajdhani', sans-serif;
-  background: rgba(241,231,103,1);
-  background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(180,82,191,1)));
-  background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
-  background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
-  background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
-  background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(180,82,191,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b452bf', GradientType=1 );
   margin-top: 15px;
   float: right;
 }
@@ -478,6 +469,18 @@ margin-top: 5%;
 #precioTotal{
 
   float: right;
+
+}
+
+#logoCentral{
+
+  background-color: white;
+  color: black;
+  font-size: 120px;
+  padding-top: 15%;
+  span{
+    font-size: 90px;
+  }
 
 }
 
