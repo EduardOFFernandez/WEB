@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", cargar);
-var ip = "localhost";
+var ip = "192.168.4.77";
 
 function cargar(){
     document.getElementById("comprar").addEventListener("click", generarPedido);
 }
 
 function generarPedido(){
+    
     //Conexion AJAX
     peticion_http = new XMLHttpRequest();
 
@@ -17,8 +18,9 @@ function generarPedido(){
     peticion_http.send(null);
     
     function generar() {
-          
-        if (peticion_http.readyState == 4 && peticion_http.status == 200) {
+        
+       /* if (peticion_http.readyState == 4 && peticion_http.status == 200) {
+            alert("YE");
             //Conexion AJAX
             peticion_http = new XMLHttpRequest();
 
@@ -29,14 +31,16 @@ function generarPedido(){
             //Enviamos parámetros;
             peticion_http.send(null);
 
+            
+
             function redirect(){
                 if (peticion_http.readyState == 4 && peticion_http.status == 200) {
-                    location.href ="http://"+ip+"/web/pedidos.php";
+                    
                 }
             }
             
         
-        }
+        }*/
     }
 }
 

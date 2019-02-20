@@ -52,6 +52,6 @@ $insertIdPedido = "UPDATE LineaPedido SET idPedido = '$idPedido' WHERE idPedido 
 $conn->query($insertIdPedido);
 
 //Cerrar transacción
-
+include 'eliminarCarrito.php';
 echo $volcarTabla;
 ?>

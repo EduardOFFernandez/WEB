@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", cargar);
-var ip = "localhost";
+var ip = "192.168.4.77";
 
 function cargar() {
     var btnDetallesPedido = document.getElementsByClassName("detallesPedido");

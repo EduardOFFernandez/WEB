@@ -1,5 +1,6 @@
 <?php
 require 'database.php';
+$ip = "192.168.4.77";
 //CONSULTA PARA SABER EL ID CARRITO DEL USUARIO
 $idUsuario = $_SESSION['idUsuario'];
 $sql="SELECT idCarrito FROM Carrito WHERE idUsuario = $idUsuario";
@@ -48,16 +49,15 @@ while($filaCarrito = mysqli_fetch_array($resCarrito)){
 
 ?>
 
-<form id="comprar" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_xclick">
             <input type="hidden" name="business" value="streetwearshop@shop.com">
             <input type="hidden" name="item_name" value="Pedido">
             <input type="hidden" name="currency_code" value="EUR">
             <input type="hidden" name="amount" value='<?php echo $total ?>'>
-            <input type="hidden" name="return" value="http://localhost/web/pedidos.php">
-            <input type="hidden" name="cancel_return" value="http://localhost/web"> 
-            <input type="image" src="http://www.paypal.com/es_XC/i/btn/x-click-but01.gif"
-                   name="submit"
-            >
+            <input type="hidden" name="return" value=<?php echo "http://".$ip."/web/pedidos.php" ?>>
+            <input type="hidden" name="cancel_return" value=<?php echo "http://".$ip."/web" ?>> 
+            <input id="comprar" type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+            
 </form>
 

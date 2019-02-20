@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", cargar);
 var idProducto;
-var ip = "localhost";
+var ip = "192.168.4.77";
 
 function cargar(){
     

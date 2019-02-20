@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", cargar);
-var ip = "localhost";
+var ip = "192.168.4.77";
 
 function cargar() {
     document.getElementById('carrito').addEventListener("click", mostrarCarrito);
