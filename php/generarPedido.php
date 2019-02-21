@@ -53,5 +53,4 @@ $conn->query($insertIdPedido);
 
 //Cerrar transacción
 include 'eliminarCarrito.php';
-echo $volcarTabla;
 ?>
